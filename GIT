@@ -1,0 +1,116 @@
+# membuat folder proyek
+git init namafolder
+
+# melihat catatan perubahan
+git log
+git log --author='username'
+
+# melihat perbandingan file sebelum dan sesudah
+git diff
+
+# melihat status file 
+git status
+
+# merubah file ke stagged
+git add namafile
+git add .
+git add *.tipefile
+
+# merubah file ke commit
+git commit -m "pesan"
+
+# membuat cabang baru
+git branch namacabang
+
+# pindah ke cabang
+git checkout namacabang
+
+# melihat keberadaan kita
+git branch
+
+# menggabungkan file ke cabang utama
+git merge namacabang
+
+# menghapus cabang yang sudah tidak dipakai
+git branch -d namacabang
+
+# MENGGUNAKAN SSH DI GITHUB
+1. MEMBUAT KEY SSH
+   ssh-keygen
+
+2. JALANKAN SSH ANGEN DAN LOAD SSH KEY
+   -menjalankan SSH agent
+    ssh-agent /bin/bash
+   -load SSH key
+    ssh-add ~/tempatid/id_anda
+   -cek ssh
+    ssh-add -l
+
+3. TAMBAHKAN SSH KEY KE GITHUB
+   -ambil kunci publik yang sudah dibuat
+    cat ~/tempatid/id_anda.pub
+   -copy semua teks yang ditampilkan
+   -masuk ke Settings > SSH and GPG Keys, lalu buat kunci baru.
+   -maasukkan key yang sudah dicopy
+
+4. UJI KONEKTIVITAS
+   ssh -T git@github.com
+
+# MENAMBAHKAN DAN MENGHAPUS REMOTE
+# menambahkan remote
+git remote add namaremote URLremote
+
+# cek remote apa saja yang ditambahkan
+git remote -v
+
+# Ubah nama remote
+git remote rename namalama namabaru
+
+# Hapus remote
+git remove namaremote
+
+# Membuat lokal branch baru yang berasal dari remote branch
+# dan saling berhubungan satu sama lain
+git checkout -b <branch> <remote>/<branch>
+
+# MENGIRIM REVISI KE REMOTE REPOSITORY
+# mengirim revisi ke repository
+git push namaremote namacabangtujuan
+
+# MENGAMBIL REVISI DARI REMOTE REPOSITORY
+# Ada dua perintah untuk mengambil revisi dari repository remote:
+    git fetch [nama remote] [nama cabang]
+    git pull [nama remote] [nama cabang]
+
+Perintah git fetch hanya akan mengambil revisi (commit) saja dan tidak langsung melakukan penggabungan (merge) terhadap repository lokal.
+
+Sedangkan git pull akan mengambil revisi (commit) dan langsung melakukan penggabungan (merge) terhadap repository lokal.
+
+Bila kita sudah membuat perubahan di repository lokal, maka sebaiknya menggunakan git fetch agar perubahan yang kita lakukan tidak hilang.
+
+Namun, bila kita tidak pernah melakukan perubahan apapun dan ingin mengambil versi terakhir dari repository remote, maka gunakanlah git pull.
+
+1. MENGAMBIL REVISI DENGAN GIT FETCH
+# Mengambil Revisi dengan git fetch 
+git fetch github master
+
+# cek log/catatan remote
+git log github/master --oneline
+
+# menggabungkan commit dari repository remote dengan lokal
+git merge github/master. github/master adalah cabang master di repository remote.
+
+2. MENGAMBIL REVISI DENGAN GIT PULL
+# membuat file baru melalu Github
+
+# mengambil revisi dengan git pull
+git pull github master
+
+
+
+
+
+
+
+
+
