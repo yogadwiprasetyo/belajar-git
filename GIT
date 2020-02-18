@@ -19,6 +19,7 @@ git add *.tipefile
 # merubah file ke commit
 git commit -m "pesan"
 
+# GIT BRANCH 
 # membuat cabang baru
 git branch namacabang
 
@@ -33,6 +34,9 @@ git merge namacabang
 
 # menghapus cabang yang sudah tidak dipakai
 git branch -d namacabang
+
+# tracking branch
+git checkout -b <branch> <remote>/<branch>
 
 # MENGGUNAKAN SSH DI GITHUB
 1. MEMBUAT KEY SSH
