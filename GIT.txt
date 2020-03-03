@@ -26,6 +26,9 @@ git branch namacabang
 # pindah ke cabang
 git checkout namacabang
 
+# merubah nama cabang
+git branch -m namalama namabaru
+
 # melihat keberadaan kita
 git branch
 
