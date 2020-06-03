@@ -19,7 +19,7 @@ git add *.tipefile
 # merubah file ke commit
 git commit -m "pesan"
 
-# GIT BRANCH 
+# GIT BRANCH #
 # membuat cabang baru
 git branch namacabang
 
@@ -41,7 +41,7 @@ git branch -d namacabang
 # tracking branch
 git checkout -b <branch> <remote>/<branch>
 
-# MENGGUNAKAN SSH DI GITHUB
+# MENGGUNAKAN SSH DI GITHUB #
 1. MEMBUAT KEY SSH
    ssh-keygen
 
@@ -63,7 +63,7 @@ git checkout -b <branch> <remote>/<branch>
 4. UJI KONEKTIVITAS
    ssh -T git@github.com
 
-# MENAMBAHKAN DAN MENGHAPUS REMOTE
+# MENAMBAHKAN DAN MENGHAPUS REMOTE #
 # menambahkan remote
 git remote add namaremote URLremote
 
@@ -80,11 +80,11 @@ git remove namaremote
 # dan saling berhubungan satu sama lain
 git checkout -b <branch> <remote>/<branch>
 
-# MENGIRIM REVISI KE REMOTE REPOSITORY
+# MENGIRIM REVISI KE REMOTE REPOSITORY #
 # mengirim revisi ke repository
 git push namaremote namacabangtujuan
 
-# MENGAMBIL REVISI DARI REMOTE REPOSITORY
+# MENGAMBIL REVISI DARI REMOTE REPOSITORY #
 # Ada dua perintah untuk mengambil revisi dari repository remote:
     git fetch [nama remote] [nama cabang]
     git pull [nama remote] [nama cabang]
